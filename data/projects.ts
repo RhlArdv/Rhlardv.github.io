@@ -23,5 +23,28 @@ export const projects: Project[] = [
             demo: null,
             repo: null
         }
+    },
+    {
+        id: 2,
+        title: "LAVAS: Layanan Audio Visual Arsip Statis",
+        description: "Web-based information management system for audiovisual archives and digital document services, built with Laravel 12 for managing institutional archives, media galleries, news, and profile information.",
+        tech: ["Laravel", "PHP", "TailwindCSS", "AlpineJS", "MySQL", "Vite"],
+        image: "/lavas.png",
+        features: [
+            "Implemented comprehensive digital archive system with flexible categorization for static and dynamic archives including catalog management and procedural guidelines.",
+            "Built multi-media gallery supporting photos, videos, and YouTube integration with SEO-friendly URL structure and flexible content navigation.",
+            "Developed full-featured content management system including news/CRUD, figure profiles with photos, infographics, and dynamic slider/carousel for homepage banners.",
+            "Created institutional profile section with vision, mission, service listings, team/staff profiles, and activity gallery documentation.",
+            "Integrated geographic information system for Padang area information with time lapse documentation and multimedia area documentation.",
+            "Implemented role-based access control (RBAC) with flexible permission system for Administrator and Staff roles with secure authentication via Laravel Breeze.",
+            "Added comprehensive security features including password hashing, CSRF protection, XSS prevention, SQL injection prevention, file upload validation, and rate limiting.",
+            "Built public services section for PPID transparency information, service procedure guidelines, and accessible contact information.",
+            "Implemented activity logging and visitor statistics tracking with admin dashboard for monitoring and analytics.",
+            "Deployed with modern build tooling using Vite 6 for fast asset compilation and optimized performance with Intervention Image for image processing and Spatie PDF to Image conversion."
+        ],
+        links: {
+            demo: null,
+            repo: "https://github.com/RhlArdv/lavas"
+        }
     }
 ];
