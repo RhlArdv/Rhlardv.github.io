@@ -81,8 +81,8 @@ export const careers: CareerItem[] = [
 // Education Data
 // ===========================================
 export const education: EducationItem = {
-    degree: 'Bachelor of Information Technology',
-    institution: 'Universitas Muhammadiyah Yogyakarta'
+    degree: 'Bachelor of Information Systems',
+    institution: 'Universitas Metamedia'
 };
 
 // ===========================================
@@ -90,9 +90,9 @@ export const education: EducationItem = {
 // ===========================================
 export const certifications: CertificationItem[] = [
     {
-        title: 'Web Developer (BNSP)',
+        title: 'Junior Web Programmer (BNSP)',
         issuer: 'National Prof. Certification',
-        year: '2024'
+        year: '2025'
     },
     {
         title: 'IT Specialist - Software Dev',
