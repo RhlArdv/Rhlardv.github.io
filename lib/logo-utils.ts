@@ -19,7 +19,16 @@ export const techSlugMap: Record<string, string> = {
     'S3 Storage': 'amazons3',
     'DigitalOcean': 'digitalocean',
     'Framer Motion': 'framer',
-    'Framer': 'framer'
+    'Framer': 'framer',
+    'PHP Native': 'php',
+    'CSS3': 'css',
+    'HTML5': 'html5',
+    'JavaScript': 'javascript',
+    'MySQL': 'mysql',
+    'Laravel': 'laravel',
+    'AlpineJS': 'alpine.js',
+    'Vite': 'vite',
+    'PHP': 'php'
 };
 
 /**
