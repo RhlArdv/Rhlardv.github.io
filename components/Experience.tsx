@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import { careers, education, certifications, awards } from '@/data/experience';
+import { careers, education, certifications } from '@/data/experience';
 import CareerCard from './experience/CareerCard';
 
 /**
@@ -38,7 +38,7 @@ const Experience: React.FC = () => {
                         </div>
                     </div>
 
-                    {/* RIGHT COLUMN: Education, Certs, & Honors */}
+                    {/* RIGHT COLUMN: Education & Certs */}
                     <div className="space-y-24">
 
                         {/* Education */}
@@ -83,25 +83,6 @@ const Experience: React.FC = () => {
                             </div>
                         </div>
 
-                        {/* Honors & Awards */}
-                        <div>
-                            <div className="border-b border-slate-200 dark:border-slate-800 pb-4 mb-8">
-                                <h3 className="text-xl font-bold uppercase tracking-tight">Honors & Awards</h3>
-                            </div>
-                            <div className="space-y-8 pl-6 border-l border-slate-100 dark:border-slate-800">
-                                {awards.map((award, index) => (
-                                    <div key={index}>
-                                        <h4 className="text-lg font-black uppercase tracking-tighter">{award.title}</h4>
-                                        <p className="text-[10px] font-mono tracking-widest text-slate-400 uppercase font-bold">
-                                            {award.organization} • {award.year}
-                                        </p>
-                                        <p className="text-sm text-slate-600 dark:text-slate-400 mt-2 font-medium">
-                                            {award.description}
-                                        </p>
-                                    </div>
-                                ))}
-                            </div>
-                        </div>
                     </div>
 
                 </div>

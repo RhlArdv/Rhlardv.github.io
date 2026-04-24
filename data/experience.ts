@@ -1,5 +1,3 @@
-import { LucideIcon } from 'lucide-react';
-
 /**
  * Career/Work Experience Item
  */
@@ -32,15 +30,7 @@ export interface CertificationItem {
     year: string;
 }
 
-/**
- * Award/Honor Item
- */
-export interface AwardItem {
-    title: string;
-    organization: string;
-    year: string;
-    description: string;
-}
+// Awards section removed - no award data provided
 
 // ===========================================
 // Career Data
@@ -105,20 +95,3 @@ export const certifications: CertificationItem[] = [
     }
 ];
 
-// ===========================================
-// Awards Data
-// ===========================================
-export const awards: AwardItem[] = [
-    {
-        title: 'Top 3 The Gade Sociopreneurship',
-        organization: 'PT. Pegadaian',
-        year: '2023',
-        description: 'Developed an innovative business solution with the Inclue Indonesia team.'
-    },
-    {
-        title: 'Business Acumen Program',
-        organization: 'Tanoto Foundation',
-        year: '2022',
-        description: 'Selected as a finalist in a prestigious future business leaders program.'
-    }
-];

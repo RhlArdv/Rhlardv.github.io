@@ -1,9 +1,6 @@
 import { Project } from '@/types';
 
 export const projects: Project[] = [
-
-
-
     {
         id: 1,
         title: "PANTAUPOHON: Enterprise Agri-Tech Intelligence",
@@ -22,27 +19,8 @@ export const projects: Project[] = [
             repo: null
         }
     },
-
     {
         id: 2,
-        title: "Modern Personal Portfolio",
-        description: "A high-performance cinematic portfolio built with Next.js 15, focusing on editorial design and smooth interaction.",
-        tech: ["Next.js", "TypeScript", "TailwindCSS", "Framer"],
-        image: "/porto.png",
-        features: [
-            "Next.js 15 Server-Side Rendering (SSR) for optimal performance.",
-            "Lighthouse Score 100/100 through meticulous asset optimization.",
-            "A24-inspired Editorial UI with custom spring-based animations.",
-            "Dynamic Project Indexing with fluid modal transitions."
-        ],
-        links: {
-            demo: "#",
-            repo: null
-        }
-    },
-
-    {
-        id: 3,
         title: "Khas Jogja Store",
         description: "A digital marketplace empowering local MSMEs in Yogyakarta to sell authentic souvenirs through a centralized platform.",
         tech: ["Laravel", "TailwindCSS", "daisyUI", "MySQL", "DigitalOcean", "Midtrans"],
@@ -59,7 +37,7 @@ export const projects: Project[] = [
         }
     },
     {
-        id: 4,
+        id: 3,
         title: "Simply Haircut Platform",
         description: "Integrated booking and education ecosystem for premium barbershops, featuring real-time artist scheduling.",
         tech: ["Laravel", "MySQL", "JavaScript", "Bootstrap"],
@@ -76,7 +54,7 @@ export const projects: Project[] = [
         }
     },
     {
-        id: 5,
+        id: 4,
         title: "Ourfield: Mobile App for Sports Field",
         description: "A comprehensive mobile solution designed to streamline the process of discovering and booking local sports facilities through an intuitive user interface.",
         tech: ["Figma"],
@@ -92,6 +70,4 @@ export const projects: Project[] = [
             repo: null
         }
     }
-
-
 ];
