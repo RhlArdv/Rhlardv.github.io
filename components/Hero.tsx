@@ -46,7 +46,7 @@ const Hero: React.FC = () => {
                         </div>
                         <div className="hidden md:flex items-center gap-1.5 text-slate-400">
                             <MapPin className="w-3 h-3" />
-                            <span className="text-[10px] tracking-widest uppercase">Indonesia, ID</span>
+                            <span className="text-[10px] tracking-widest uppercase">Padang, Indonesia</span>
                         </div>
                     </div>
 
@@ -68,8 +68,8 @@ const Hero: React.FC = () => {
 
                     {/* Description - The "Pitch" */}
                     <p className="text-slate-600 dark:text-slate-400 text-sm md:text-base leading-relaxed max-w-md">
-                        I'm a developer who creates seamless digital experiences where <strong>Robust Logic</strong> meets <strong>Creative Design</strong>.
-                        Specializing in modern web ecosystems built with <span className="font-semibold text-slate-900 dark:text-white">Next.js</span> and <span className="font-semibold text-slate-900 dark:text-white">Laravel</span>.
+                        I am a Software Engineer specializing in full-stack web development, currently working as a Junior Software Engineer at <strong>Dinas Komunikasi dan Informatika</strong>, West Sumatra.
+                        Passionate about building scalable applications with <span className="font-semibold text-slate-900 dark:text-white">Next.js</span> and <span className="font-semibold text-slate-900 dark:text-white">Laravel</span>.
                     </p>
 
                     {/* Tech Pills (Tiered Strategy) */}

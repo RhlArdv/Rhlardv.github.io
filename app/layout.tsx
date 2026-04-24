@@ -17,11 +17,11 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "Rahul Ardiva Luthfi | Full-Stack Developer",
+    default: "Rahul Ardiva Luthfi | Software Engineer",
     template: "%s | Rahul Ardiva Luthfi"
   },
-  description: "Full-stack developer specializing in Next.js and Laravel. Building scalable web applications with modern technologies.",
-  keywords: ["full-stack developer", "next.js", "laravel", "typescript", "react", "indonesia", "web developer"],
+  description: "Software Engineer specializing in full-stack web development. Junior Software Engineer at Dinas Komunikasi dan Informatika, West Sumatra. Building scalable applications with Next.js and Laravel.",
+  keywords: ["software engineer", "full-stack developer", "next.js", "laravel", "typescript", "react", "indonesia", "web developer"],
   authors: [{ name: "Rahul Ardiva Luthfi" }],
   creator: "Rahul Ardiva Luthfi",
   openGraph: {
@@ -29,21 +29,21 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://rhlardv.github.io",
     siteName: "Rahul Ardiva Luthfi Portfolio",
-    title: "Rahul Ardiva Luthfi | Full-Stack Developer",
-    description: "Full-stack developer specializing in Next.js and Laravel. Building scalable web applications.",
+    title: "Rahul Ardiva Luthfi | Software Engineer",
+    description: "Software Engineer specializing in full-stack web development. Junior Software Engineer at Dinas Komunikasi dan Informatika, West Sumatra.",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Rahul Ardiva Luthfi - Full-Stack Developer"
+        alt: "Rahul Ardiva Luthfi - Software Engineer"
       }
     ]
   },
   twitter: {
     card: "summary_large_image",
-    title: "Rahul Ardiva Luthfi | Full-Stack Developer",
-    description: "Full-stack developer specializing in Next.js and Laravel.",
+    title: "Rahul Ardiva Luthfi | Software Engineer",
+    description: "Software Engineer specializing in full-stack web development. Junior Software Engineer at Dinas Komunikasi dan Informatika, West Sumatra.",
     images: ["/og-image.png"]
   },
   robots: {

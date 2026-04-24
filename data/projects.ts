@@ -19,7 +19,7 @@ export const projects: Project[] = [
         ],
         links: {
             demo: null,
-            repo: "https://github.com/rfssu/Tree-Logbook.git"
+            repo: null
         }
     },
 
@@ -37,7 +37,7 @@ export const projects: Project[] = [
         ],
         links: {
             demo: "#",
-            repo: "https://github.com/rfssu/My-Portofolio"
+            repo: null
         }
     },
 

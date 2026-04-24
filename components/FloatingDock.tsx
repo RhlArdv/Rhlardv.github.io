@@ -20,7 +20,7 @@ import DockIcon from './dock/DockIcon';
 const SCROLL_OFFSET = 100;
 
 /** WhatsApp contact URL */
-const WHATSAPP_URL = 'https://wa.me/6282134807621';
+const WHATSAPP_URL = 'https://wa.me/6285363864537';
 
 /**
  * Hybrid Floating Dock

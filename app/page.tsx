@@ -14,9 +14,9 @@ async function getGitHubStats() {
   try {
     // Parallelize fetches
     const [userRes, reposRes, contributionsRes] = await Promise.all([
-      fetch('https://api.github.com/users/rfssu', { next: { revalidate: 3600 } }),
-      fetch('https://api.github.com/users/rfssu/repos?per_page=100', { next: { revalidate: 3600 } }),
-      fetch('https://github-contributions-api.jogruber.de/v4/rfssu?y=last', { next: { revalidate: 3600 } })
+      fetch('https://api.github.com/users/RhlArdv', { next: { revalidate: 3600 } }),
+      fetch('https://api.github.com/users/RhlArdv/repos?per_page=100', { next: { revalidate: 3600 } }),
+      fetch('https://github-contributions-api.jogruber.de/v4/RhlArdv?y=last', { next: { revalidate: 3600 } })
     ]);
 
     if (!userRes.ok || !reposRes.ok || !contributionsRes.ok) throw new Error('Failed to fetch data');
