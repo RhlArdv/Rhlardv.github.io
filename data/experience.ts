@@ -16,8 +16,11 @@ export interface CareerItem {
  * Education Item
  */
 export interface EducationItem {
+    id: string;
     degree: string;
     institution: string;
+    period?: string;
+    description?: string;
 }
 
 /**
@@ -45,58 +48,59 @@ export interface AwardItem {
 export const careers: CareerItem[] = [
     {
         id: 'career-1',
-        period: 'Jan 2025 — Present',
-        title: 'Full-Stack Developer',
-        company: 'Quadrant Co.',
-        location: 'Remote (Contract)',
-        description: 'Architected scalable web solutions using Next.js and Laravel. Collaborated with the team to translate business needs into production code.'
+        period: 'Sep 2025 — Present',
+        title: 'Full Stack Developer',
+        company: 'Dinas Komunikasi dan Informatika Kota Padang',
+        location: 'Padang (Onsite)',
+        description: 'Architecting and managing system workflows with efficient database design using SQLyog and phpMyAdmin. Building robust server-side applications with Laravel following clean architecture principles, while crafting responsive and interactive web interfaces with Tailwind CSS and Bootstrap. Implementing dynamic user experiences via AJAX/jQuery and developing RESTful APIs for seamless system integration. Leveraging Git/GitHub/GitLab for version control, conducting thorough testing with Chrome DevTools, and producing comprehensive technical documentation to ensure maintainability and knowledge transfer.'
     },
-    {
-        id: 'career-2',
-        period: 'Oct 2024 — Feb 2025',
-        title: 'Program Development (Data Analyst)',
-        company: 'PT Surya Citra Media (SCM)',
-        location: 'Jakarta',
-        description: 'Synthesized complex viewership data into actionable insights. Collaborated with cross-functional teams to optimize content strategy.'
-    },
-    {
-        id: 'career-3',
-        period: 'Aug 2022 — Aug 2023',
-        title: 'Co-Founder & Tech Lead',
-        company: 'Inclue Indonesia',
-        location: 'Yogyakarta',
-        description: 'Led technical strategy for a sociopreneurship startup. Secured "Top 3 The Gade" award by aligning tech product with social impact goals.'
-    },
-    {
-        id: 'career-4',
-        period: 'Feb 2022 — Jun 2022',
-        title: 'Assistant Lecturer (Python/OOP)',
-        company: 'Universitas Muhammadiyah Yogyakarta',
-        location: 'Yogyakarta',
-        description: 'Mentored students in Object-Oriented Programming (OOP) and Python. Debugged complex code logic and facilitated lab sessions.'
-    }
 ];
 
 // ===========================================
 // Education Data
 // ===========================================
-export const education: EducationItem = {
-    degree: 'Bachelor of Information Systems',
-    institution: 'Universitas Metamedia'
-};
+export const education: EducationItem[] = [
+    {
+        id: 'edu-1',
+        degree: 'Bachelor of Information Systems',
+        institution: 'Universitas Metamedia'
+    },
+    {
+        id: 'edu-2',
+        degree: 'Exchange Student Batch 4',
+        institution: 'Telkom University | Kampus Merdeka',
+        period: '2024',
+        description: 'Completed 20 credits with a 3.63 GPA through the Kampus Merdeka MBKM Student Exchange Program. Strengthened technical and managerial competencies through coursework in Social Media Analytics, ICT Project Management, User Experience, System Security, and Basic Software Engineering.'
+    }
+];
 
 // ===========================================
 // Certifications Data
 // ===========================================
 export const certifications: CertificationItem[] = [
     {
-        title: 'Junior Web Programmer (BNSP)',
-        issuer: 'National Prof. Certification',
-        year: '2025'
+        title: 'Junior Web Programmer',
+        issuer: 'BNSP | ID: 62019 2513 5 0028834 2025',
+        year: 'Dec 2025 — Dec 2028'
     },
     {
-        title: 'IT Specialist - Software Dev',
-        issuer: 'Certiport',
+        title: 'MTCNA',
+        issuer: 'Mikrotik',
+        year: 'Jun 2023'
+    },
+    {
+        title: 'Java Foundation',
+        issuer: 'Oracle',
+        year: 'May 2023'
+    },
+    {
+        title: 'Mentor Database',
+        issuer: 'Kafekoding',
+        year: '2023'
+    },
+    {
+        title: 'Pertukaran Mahasiswa Merdeka Batch 4',
+        issuer: 'Kampus Merdeka & Universitas Telkom',
         year: '2024'
     }
 ];

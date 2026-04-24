@@ -46,9 +46,23 @@ const Experience: React.FC = () => {
                             <div className="border-b border-slate-200 dark:border-slate-800 pb-4 mb-8">
                                 <h3 className="text-xl font-bold uppercase tracking-tight">Education</h3>
                             </div>
-                            <div className="pl-6 border-l border-slate-100 dark:border-slate-800">
-                                <h4 className="text-lg font-black uppercase tracking-tighter">{education.degree}</h4>
-                                <p className="text-sm text-slate-500 mt-1 font-medium">{education.institution}</p>
+                            <div className="space-y-8 pl-6 border-l border-slate-100 dark:border-slate-800">
+                                {education.map((edu) => (
+                                    <div key={edu.id}>
+                                        <h4 className="text-lg font-black uppercase tracking-tighter">{edu.degree}</h4>
+                                        <p className="text-sm text-slate-500 mt-1 font-medium">{edu.institution}</p>
+                                        {edu.period && (
+                                            <p className="text-[10px] font-mono uppercase tracking-[0.2em] text-slate-400 mt-1">
+                                                {edu.period}
+                                            </p>
+                                        )}
+                                        {edu.description && (
+                                            <p className="text-sm text-slate-600 dark:text-slate-400 mt-2 font-medium">
+                                                {edu.description}
+                                            </p>
+                                        )}
+                                    </div>
+                                ))}
                             </div>
                         </div>
 
