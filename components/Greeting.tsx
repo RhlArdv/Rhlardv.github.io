@@ -3,8 +3,8 @@
 import { useEffect, useState } from 'react';
 
 const Greeting: React.FC = () => {
-    const [text, setText] = useState('Hello');
-    const [icon, setIcon] = useState('👋');
+    const [text, setText] = useState('Loading...');
+    const [icon, setIcon] = useState('');
     const [mounted, setMounted] = useState(false);
 
     useEffect(() => {
@@ -19,7 +19,7 @@ const Greeting: React.FC = () => {
         }
     }, []);
 
-    if (!mounted) return <span className="opacity-0">Hello</span>;
+    if (!mounted) return null;
 
     return (
         <div className="flex items-center gap-2">

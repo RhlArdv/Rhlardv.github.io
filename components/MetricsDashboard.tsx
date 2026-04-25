@@ -56,13 +56,17 @@ const MetricCard: React.FC<MetricCardProps> = ({ icon: Icon, label, value, trend
  */
 const LiveIndicator: React.FC = () => {
     const [count, setCount] = useState(1);
+    const [mounted, setMounted] = useState(false);
 
     useEffect(() => {
+        setMounted(true);
         const interval = setInterval(() => {
             setCount(prev => Math.max(1, Math.min(prev + (Math.random() > 0.5 ? 1 : -1), 4)));
         }, 10000);
         return () => clearInterval(interval);
     }, []);
+
+    if (!mounted) return null;
 
     return (
         <div className="flex items-center gap-2">
