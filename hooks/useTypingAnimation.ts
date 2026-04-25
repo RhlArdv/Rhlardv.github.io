@@ -17,8 +17,15 @@ export const useTypingAnimation = ({
     const [currentTextIndex, setCurrentTextIndex] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
     const [speed, setSpeed] = useState(typingSpeed);
+    const [mounted, setMounted] = useState(false);
 
     useEffect(() => {
+        setMounted(true);
+    }, []);
+
+    useEffect(() => {
+        if (!mounted) return;
+
         const currentFullText = texts[currentTextIndex];
 
         const handleTyping = () => {
@@ -46,7 +53,7 @@ export const useTypingAnimation = ({
 
         const timer = setTimeout(handleTyping, speed);
         return () => clearTimeout(timer);
-    }, [displayedText, isDeleting, currentTextIndex, texts, typingSpeed, deletingSpeed, pauseDuration, speed]);
+    }, [displayedText, isDeleting, currentTextIndex, texts, typingSpeed, deletingSpeed, pauseDuration, speed, mounted]);
 
     return { displayedText, isDeleting };
 };
