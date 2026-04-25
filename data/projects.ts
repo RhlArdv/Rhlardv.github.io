@@ -46,5 +46,28 @@ export const projects: Project[] = [
             demo: null,
             repo: "https://github.com/RhlArdv/lavas"
         }
+    },
+    {
+        id: 3,
+        title: "KOPTIK: Sistem POS Kedai Kopi",
+        description: "Modern Point of Sale application for coffee shops with QR code-based ordering system, enabling customers to self-order through table QR codes and providing comprehensive admin dashboard for order, stock, and report management.",
+        tech: ["Laravel", "PHP", "TailwindCSS", "AlpineJS", "SQLite", "Vite"],
+        image: "/koptik.png",
+        features: [
+            "Built customer-facing QR code ordering system allowing customers to scan table codes, browse interactive menu with categories, manage cart items in real-time, and place orders with automatic stock checking.",
+            "Developed comprehensive admin dashboard with real-time analytics showing daily total orders, pending payments, daily revenue, and low stock alerts for proactive inventory management.",
+            "Implemented full order management system with status workflow (Pending → Processing → Completed), payment confirmation with automatic change calculation, and complete order history tracking.",
+            "Created complete menu management module with CRUD operations for menu items, categorization system, price management, and stock control with automatic notifications for low inventory.",
+            "Built user management system with role-based access control supporting multiple users with different permission levels (Admin, Cashier) using Laravel Breeze authentication.",
+            "Developed comprehensive reporting system with Excel export capability via maatwebsite/excel and PDF export via barryvdh/laravel-dompdf for sales analytics and business insights.",
+            "Integrated Yajra Laravel DataTables for advanced data table functionality with server-side processing, search, filtering, and pagination for improved performance with large datasets.",
+            "Implemented real-time stock validation preventing orders for out-of-stock items and maintaining accurate inventory levels across all menu items.",
+            "Built responsive design optimized for both customer mobile devices (QR scanning, menu browsing) and admin desktop use (dashboard, order management) using Tailwind CSS utility classes.",
+            "Deployed with SQLite database (MySQL compatible) using Vite 6 for fast asset compilation and Alpine.js for reactive frontend interactions without heavy JavaScript frameworks."
+        ],
+        links: {
+            demo: null,
+            repo: null
+        }
     }
 ];
