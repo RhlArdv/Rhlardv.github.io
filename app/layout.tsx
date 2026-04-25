@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "Rahul Ardiva Luthfi | full-Stack Developer",
+    default: "Rahul Ardiva Luthfi | Full-Stack Developer",
     template: "%s | Rahul Ardiva Luthfi"
   },
   description: "Software Engineer specializing in full-stack web development. Junior Software Engineer at Dinas Komunikasi dan Informatika, West Sumatra. Building scalable applications with Next.js and Laravel.",
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Rahul Ardiva Luthfi | Software Engineer",
+    title: "Rahul Ardiva Luthfi | Full-Stack Developer",
     description: "Software Engineer specializing in full-stack web development. Junior Software Engineer at Dinas Komunikasi dan Informatika, West Sumatra.",
     images: ["/og-image.png"]
   },
